@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+
+    <title> Movie Seat Booking🍿🎥</title>
+  </head>
+  <body>
+
+<!-- drop down select movie menu with options listed-->
+    <div class="movie-container">
+      <label> Pick a Movie🍿: </label>
+      <select  id="movie">
+        <option value="10">Tom & Jerry: $10.00 </option>
+        <option value="12">Raya And The Last Dragon: $12.00 </option>
+        <option value="8">Monster Hunter:  $8.00 </option>
+        <option value="9">Lion Queens: $9.00 </option>
+      </select>
+    </div>
+
+<!--
+create the showcase
+  unorder list with items (seats)
+show seats : Unselected || selected,  Occupied seat.
+
+-->
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>N/A</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+
+    <!--
+The rows of seats and the movie screen wrapped in a container
+  for the screen we just want to edit with css
+  for the seats, we want to define rows
+    -->
+<div class="container">
+  <div class="screen"></div>
+
+  <!-- 6 rows and 8 seats -->
+   <div class="row">
+     <div class="seat"> </div>
+     <div class="seat"> </div>
+     <div class="seat"> </div>
+     <div class="seat"> </div>
+     <div class="seat"> </div>
+     <div class="seat"> </div>
+     <div class="seat"> </div>
+     <div class="seat"> </div>
+     </div>
+
+     <div class="row">
+       <div class="seat"> </div>
+       <div class="seat"> </div>
+       <div class="seat"> </div>
+       <div class="seat occupied"> </div>
+       <div class="seat occupied"> </div>
+       <div class="seat"> </div>
+       <div class="seat"> </div>
+       <div class="seat"> </div>
+       </div>
+
+       <div class="row">
+         <div class="seat"> </div>
+         <div class="seat"> </div>
+         <div class="seat"> </div>
+         <div class="seat"> </div>
+         <div class="seat"> </div>
+         <div class="seat"> </div>
+         <div class="seat occupied"> </div>
+         <div class="seat occupied"> </div>
+         </div>
+
+         <div class="row">
+           <div class="seat"> </div>
+           <div class="seat"> </div>
+           <div class="seat"> </div>
+           <div class="seat"> </div>
+           <div class="seat"> </div>
+           <div class="seat"> </div>
+           <div class="seat"> </div>
+           <div class="seat"> </div>
+           </div>
+
+           <div class="row">
+             <div class="seat"> </div>
+             <div class="seat"> </div>
+             <div class="seat"> </div>
+             <div class="seat occupied"> </div>
+             <div class="seat occupied"> </div>
+             <div class="seat"> </div>
+             <div class="seat"> </div>
+             <div class="seat"> </div>
+             </div>
+
+             <div class="row">
+               <div class="seat occupied"> </div>
+               <div class="seat"> </div>
+               <div class="seat"> </div>
+               <div class="seat"> </div>
+               <div class="seat"> </div>
+               <div class="seat"> </div>
+               <div class="seat occupied"> </div>
+               <div class="seat occupied"> </div>
+               </div>
+   </div>
+
+<p class="text"> You have selected <span id="count"> 0 </span> seats for a price of $<span id="total"> 0 </span> </p>
+
+
+
+
+
+<script src="script.js"></script>
+  </body>
+</html>
